@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Drug Finder</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="drugs.html" class="active">Drug Finder</a></li>
+                <li><a href="todo.html">To-Do List</a></li>
+      </ul>
+    </nav>
+    <h1>Find Drugs Here</h1>
+
+    <form class="form-card">
+      <label for="drug-search">Search for drugs</label>
+      <input type="text" id="drug-search" placeholder="e.g. paracetamol">
+      <button type="submit" id="search-button">Search</button>
+    </form>
+    <p id="result" class="result"></p>
+    <h2>Available Drugs</h2>
+    <div class="category-row">
+      <div class="category">
+        <h3>Analgesics (pain relievers)</h3>
+        <ul>
+          <li>Paracetamol</li>
+          <li>Tramadol</li>
+          <li>Codeine</li>
+        </ul>
+      </div>
+
+      <div class="category">
+        <h3>Anti-inflammatory (NSAIDs)</h3>
+        <ul>
+          <li>Ibuprofen</li>
+          <li>Diclofenac</li>
+          <li>Celecoxib</li>
+          <li>Aspirin</li>
+        </ul>
+      </div>
+
+      <div class="category">
+        <h3>Antibiotics</h3>
+        <ul>
+          <li>Cefuroxime</li>
+          <li>Ciprofloxacin</li>
+          <li>Amoxicillin</li>
+        </ul>
+      </div>
+
+      <div class="category">
+        <h3>Vitamins</h3>
+        <ul>
+          <li>Vitamin C</li>
+          <li>Vitamin D</li>
+          <li>Multivitamins</li>
+        </ul>
+      </div>
+
+      <div class="category">
+        <h3>First Aid</h3>
+        <ul>
+          <li>Bandages</li>
+          <li>Antiseptic cream</li>
+          <li>Gauze</li>
+        </ul>
+      </div>
+    </div>
+
+    <p><a href="index.html">Back Home</a></p>
+
+    <script src="script.js"></script>
+  </body>
+</html>

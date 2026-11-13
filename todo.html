@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="drugs.html">Drug Finder</a></li>
+        <li><a href="todo.html" class="active">To-Do List</a></li>
+      </ul>
+    </nav>
+
+    <h1>My To-Do List</h1>
+
+    <form class="form-card" id="todo-form">
+      <label for="todo-input">New task</label>
+      <input type="text" id="todo-input" placeholder="e.g. Restock paracetamol">
+      <button type="submit">Add</button>
+    </form>
+    <p id="todo-message" class="result error hidden"></p>
+
+    <p id="todo-count"></p>
+    <button type="button" id="clear-done" class="secondary-button">Clear completed</button>
+    <ul id="todo-list"></ul>
+
+    <script src="todo.js"></script>
+  </body>
+</html>
