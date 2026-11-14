@@ -284,12 +284,13 @@ nav a.active {
 #todo-list li:hover {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
-footer {
+
+footer { 
   text-align: center;
   margin-top: 20px;
   padding: 10px;
   font-size: 14px;
-  color: #5b2e2e;
+  color: #882323;
 }
 @media (max-width: 600px) {
   body {
