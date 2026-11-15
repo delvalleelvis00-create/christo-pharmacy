@@ -1,24 +1,33 @@
-# Christo Pharmacy Ltd
+# Christo Pharmacy Server
 
-A responsive pharmacy website with a live drug finder and a to-do list.
+A small Node.js server for the Christo Pharmacy demo website, built while learning web development.
 
-**Live site:** https://delvalleelvis00-create.github.io/christo-pharmacy/
+**Live demo:** https://christo-pharmacy.onrender.com/
+(Free hosting: the first load can take about a minute. Demo only, so please don't enter real personal details.)
 
-## Pages
+## What it does
 
-- Home
-- Drug Finder (search filters the list as you type)
-- To-Do List (saves tasks in the browser)
+- Serves the website from the `public` folder
+- `/drugs?search=` returns matching drugs as JSON
+- `/messages` receives contact-form messages, validates them, and stores them in PostgreSQL
+- `/admin` shows stored messages behind a password
+- `/health` and `/ready` are checks for the hosting platform
 
 ## Built with
 
-HTML, CSS, and JavaScript. No frameworks.
+Node.js (no framework), PostgreSQL with the `pg` package, hosted on Render.
 
-## How to update
+## What I learned
 
-    git status
-    git add .
-    git commit -m "what I changed"
-    git push
+- How requests, responses, GET, and POST work
+- Validating input on the server
+- Keeping secrets in environment variables
+- Parameterised SQL queries, and escaping output
+- Deploying and debugging on a real host
 
-Changes appear on the live site within a few minutes.
+## Run it locally
+
+    npm install
+    npm run dev
+
+Add `ADMIN_PASSWORD` (12 or more characters) to a `.env` file.
